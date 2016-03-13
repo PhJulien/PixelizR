@@ -1,0 +1,57 @@
+
+
+time ./pixelize.py -i Original/S.jpg -o Out/S.p100.jpg -p 100
+time ./pixelize.py -i Original/S.jpg -o Out/S.p50.jpg -p 50
+time ./pixelize.py -i Original/S.jpg -o Out/S.p25.jpg -p 25
+time ./pixelize.py -i Original/S.jpg -o Out/S.p10.jpg -p 10
+time ./pixelize.py -i Original/S.jpg -o Out/S.p5.jpg -p 5
+time ./pixelize.py -i Original/S.jpg -o Out/S.p2.jpg -p 2
+time ./pixelize.py -i Original/S.jpg -o Out/S.p1.jpg -p 1
+time ./pixelize.py -i Original/S.jpg -o Out/S.p0.5.jpg -p 0.5
+
+
+
+time ./pixelize.py -i Original/M.jpg -o Out/M.p100.jpg -p 100
+time ./pixelize.py -i Original/M.jpg -o Out/M.p50.jpg -p 50
+time ./pixelize.py -i Original/M.jpg -o Out/M.p25.jpg -p 25
+time ./pixelize.py -i Original/M.jpg -o Out/M.p10.jpg -p 10
+time ./pixelize.py -i Original/M.jpg -o Out/M.p5.jpg -p 5
+time ./pixelize.py -i Original/M.jpg -o Out/M.p2.jpg -p 2
+time ./pixelize.py -i Original/M.jpg -o Out/M.p1.jpg -p 1
+time ./pixelize.py -i Original/M.jpg -o Out/M.p0.5.jpg -p 0.5
+
+
+
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p100.jpg -p 100
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p50.jpg -p 50
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p25.jpg -p 25
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p10.jpg -p 10
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p5.jpg -p 5
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p2.jpg -p 2
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p1.jpg -p 1
+time ./pixelize.py -i Original/SN.jpg -o Out/SN.p0.5.jpg -p 0.5
+
+
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p100.jpg -p 100
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p50.jpg -p 50
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p25.jpg -p 25
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p10.jpg -p 10
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p5.jpg -p 5
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p2.jpg -p 2
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p1.jpg -p 1
+time ./pixelize.py -i Original/TS.jpg -o Out/TS.p0.5.jpg -p 0.5
+
+
+convert -delay 80 -loop 0 Out/M/*.jpg Out/M.gif
+
+
+time ./pixelize.py -i Original/P.jpg -o Out/P.a.p100.jpg -p 100
+time ./pixelize.py -i Original/P.jpg -o Out/P.b.p50.jpg -p 50
+time ./pixelize.py -i Original/P.jpg -o Out/P.c.p25.jpg -p 25
+time ./pixelize.py -i Original/P.jpg -o Out/P.d.p10.jpg -p 10
+time ./pixelize.py -i Original/P.jpg -o Out/P.e.p5.jpg -p 5
+time ./pixelize.py -i Original/P.jpg -o Out/P.f.p2.jpg -p 2
+time ./pixelize.py -i Original/P.jpg -o Out/P.g.p1.jpg -p 1
+time ./pixelize.py -i Original/P.jpg -o Out/P.h.p0.5.jpg -p 0.5
+
+convert -delay 80 -loop 0 Out/P.*.jpg Out/P.gif
